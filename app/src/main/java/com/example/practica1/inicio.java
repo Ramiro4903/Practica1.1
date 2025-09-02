@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,9 +29,16 @@ public class inicio extends AppCompatActivity implements View.OnClickListener {
         t = (TextView) findViewById(R.id.textView2);
         i = (ImageView) findViewById(R.id.imageView2);
         b2 = (Button) findViewById(R.id.button2);
+        b3 = (Button) findViewById(R.id.button3);
 
         b.setOnClickListener(this);
         b2.setOnClickListener(this);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(inicio.this, "Esto es un Toast", Toast.LENGTH_SHORT).show();
+            }
+        };
     }
 
     @Override
@@ -44,6 +52,7 @@ public class inicio extends AppCompatActivity implements View.OnClickListener {
             i.setImageResource(R.drawable.baja);
         }
     }
+
 
 }
 
