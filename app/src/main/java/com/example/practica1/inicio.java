@@ -1,5 +1,6 @@
 package com.example.practica1;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,8 @@ public class inicio extends AppCompatActivity implements View.OnClickListener {
     private Button b2;
     private TextView t;
 
+    private Button b3;
+
     private ImageView i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +39,11 @@ public class inicio extends AppCompatActivity implements View.OnClickListener {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(inicio.this, "Esto es un Toast", Toast.LENGTH_SHORT).show();
+                Toast.makeText(inicio.this, "Vas a Inicio", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(inicio.this, MainActivity.class);
+                startActivity(intent);
             }
-        };
+        });
     }
 
     @Override
