@@ -38,22 +38,28 @@ public class inicio extends AppCompatActivity implements View.OnClickListener {
 
         b.setOnClickListener(this);
         b2.setOnClickListener(this);
+
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               if(v.getId() == R.id.button3){
                    Toast.makeText(inicio.this, "Vas a Inicio", Toast.LENGTH_SHORT).show();
                    Intent intent = new Intent(inicio.this, MainActivity.class);
                    startActivity(intent);
-               } else if (v.getId() == R.id.button4) {
-
-
-                   //Esto es lo que queda pendiente  -->
-                   //Marco sabe que hacer xd
-
-               }
             }
         });
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(inicio.this, Pantalla2.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
     }
 
     @Override
