@@ -21,6 +21,7 @@ public class inicio extends AppCompatActivity implements View.OnClickListener {
     private TextView t;
 
     private Button b3;
+    private Button b4;
 
     private ImageView i;
     @Override
@@ -33,15 +34,24 @@ public class inicio extends AppCompatActivity implements View.OnClickListener {
         i = (ImageView) findViewById(R.id.imageView2);
         b2 = (Button) findViewById(R.id.button2);
         b3 = (Button) findViewById(R.id.button3);
+        b4 = (Button) findViewById(R.id.button4);
 
         b.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(inicio.this, "Vas a Inicio", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(inicio.this, MainActivity.class);
-                startActivity(intent);
+               if(v.getId() == R.id.button3){
+                   Toast.makeText(inicio.this, "Vas a Inicio", Toast.LENGTH_SHORT).show();
+                   Intent intent = new Intent(inicio.this, MainActivity.class);
+                   startActivity(intent);
+               } else if (v.getId() == R.id.button4) {
+
+
+                   //Esto es lo que queda pendiente  -->
+                   //Marco sabe que hacer xd
+
+               }
             }
         });
     }
