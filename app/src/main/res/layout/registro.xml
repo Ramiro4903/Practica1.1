@@ -15,9 +15,10 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:gravity="center"
             android:text="Usuario"
-            android:textSize="16sp" />
+            android:textSize="25sp" />
 
         <EditText
             android:id="@+id/editTextText3"
@@ -30,9 +31,13 @@
 
         <TextView
             android:id="@+id/textView5"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:gravity="center"
+            android:text="Contraseña"
+            android:textSize="25sp"
+            />
 
         <EditText
             android:id="@+id/editTextText4"
@@ -45,6 +50,7 @@
 
         <Button
             android:id="@+id/button5"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Registrar" />
@@ -53,6 +59,8 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:textSize="35sp"
+            android:gravity="center"
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
