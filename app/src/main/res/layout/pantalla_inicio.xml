@@ -72,13 +72,15 @@
             android:layout_marginTop="10dp"
             android:text="Inicio"
             android:textSize="20dp" />
+        <!-- reutilizamos el boton de login para operaciones basicas -->
+
         <Button
             android:id="@+id/button4"
             android:layout_width="177dp"
             android:layout_height="51dp"
             android:layout_marginStart="130dp"
             android:layout_marginTop="20dp"
-            android:text="Cambio"
+            android:text="Calculadora"
             android:textSize="20dp" />
 
     </LinearLayout>

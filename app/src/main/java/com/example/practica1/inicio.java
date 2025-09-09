@@ -51,12 +51,10 @@ public class inicio extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(inicio.this, Registro.class);
+                Intent intent = new Intent(inicio.this, calculadora.class);
                 startActivity(intent);
             }
         });
-
-
 
 
 
