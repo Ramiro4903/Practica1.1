@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.graphics.Color;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -48,30 +49,37 @@ public class calculadora  extends AppCompatActivity implements View.OnClickListe
             float n1 = Float.parseFloat(numero);
             float n2 = Float.parseFloat(numero2);
 
-        switch (view.getId()){
-            case R.id.button6:
-                //Suma
-                t.setText("Resultado = "+(n1 + n2));
-                break;
+            //Suma
+            if(view.getId() == R.id.button6){
+                t.setText("Resultado = "+(n1+n2));
+                t.setTextColor(Color.parseColor("#4CAF50"));
+            }
 
-            case R.id.button7:
-                //Resta
-                t.setText("Resultado = "+(n1 - n2));
-                break;
-            case R.id.button8:
-              //Multiplicacion
-                t.setText("Resultado = "+(n1 * n2));
-                break;
-            case R.id.button9:
-                //Division
+            //Resta
+            else if(view.getId() == R.id.button7){
+                t.setTextColor(Color.parseColor("#4CAF50"));
+                t.setText("Resultado = "+(n1-n2));
+            }
+
+            //Multiplicacion
+            else if(view.getId() == R.id.button8){
+                t.setTextColor(Color.parseColor("#4CAF50"));
+                t.setText("Resultado = "+(n1*n2));
+            }
+
+
+            //Division
+            else if(view.getId() == R.id.button9){
                 if (n2 == 0){
-                    t.setText("No es posible dividir / 0");
+                    t.setText("No se puede dividir entre 0");
+                    //cambio el color a rojo
+                    t.setTextColor(Color.parseColor("#FF0000"));
                 }
-                else {
-                    t.setText("Resultado = " + (n1 / n2));
+                else{
+                    t.setTextColor(Color.parseColor("#4CAF50"));
+                    t.setText("Resultado = "+(n1/n2));
                 }
-                break;
-        }
+            }
 
         }
 
