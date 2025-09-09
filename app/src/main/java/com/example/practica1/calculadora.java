@@ -1,5 +1,6 @@
 package com.example.practica1;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -38,6 +39,7 @@ public class calculadora  extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View view) {
             String numero = e.getText().toString();
@@ -57,12 +59,17 @@ public class calculadora  extends AppCompatActivity implements View.OnClickListe
                 t.setText("Resultado = "+(n1 - n2));
                 break;
             case R.id.button8:
-              //Multiplicasion
+              //Multiplicacion
                 t.setText("Resultado = "+(n1 * n2));
                 break;
             case R.id.button9:
                 //Division
-                t.setText("Resultado = "+(n1 / n2));
+                if (n2 == 0){
+                    t.setText("No es posible dividir / 0");
+                }
+                else {
+                    t.setText("Resultado = " + (n1 / n2));
+                }
                 break;
         }
 
@@ -71,4 +78,3 @@ public class calculadora  extends AppCompatActivity implements View.OnClickListe
 
     }
 
-}
