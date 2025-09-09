@@ -33,6 +33,7 @@ public class calculadora  extends AppCompatActivity implements View.OnClickListe
 
         b.setOnClickListener(this);
         b1.setOnClickListener(this);
+        b2.setOnClickListener(this);
         b3.setOnClickListener(this);
 
     }
@@ -41,38 +42,28 @@ public class calculadora  extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
             String numero = e.getText().toString();
             String numero2 = e2.getText().toString();
+            //lo convertimos a un entero usando parseInt
+            float n1 = Float.parseFloat(numero);
+            float n2 = Float.parseFloat(numero2);
 
         switch (view.getId()){
             case R.id.button6:
-                //lo convertimos a un entero usando parseInt
-                int n1 = Integer.parseInt(numero);
-                int n2 = Integer.parseInt(numero2);
-
+                //Suma
                 t.setText("Resultado = "+(n1 + n2));
                 break;
 
             case R.id.button7:
-                //lo convertimos a un entero usando parseInt
-                int n1 = Integer.parseInt(numero);
-                int n2 = Integer.parseInt(numero2);
-
-                t.setText("Resultado = "+(n1 + n2));
+                //Resta
+                t.setText("Resultado = "+(n1 - n2));
                 break;
             case R.id.button8:
-                //lo convertimos a un entero usando parseInt
-                int n1 = Integer.parseInt(numero);
-                int n2 = Integer.parseInt(numero2);
-
-                t.setText("Resultado = "+(n1 + n2));
+              //Multiplicasion
+                t.setText("Resultado = "+(n1 * n2));
                 break;
             case R.id.button9:
-                //lo convertimos a un entero usando parseInt
-                int n1 = Integer.parseInt(numero);
-                int n2 = Integer.parseInt(numero2);
-
-                t.setText("Resultado = "+(n1 + n2));
+                //Division
+                t.setText("Resultado = "+(n1 / n2));
                 break;
-
         }
 
         }
