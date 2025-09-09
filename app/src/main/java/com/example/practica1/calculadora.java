@@ -39,29 +39,44 @@ public class calculadora  extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.button6){
             String numero = e.getText().toString();
             String numero2 = e2.getText().toString();
 
-            //lo convertimos a un entero usando parseInt
-            int n1 = Integer.parseInt(numero);
-            int n2 = Integer.parseInt(numero2);
+        switch (view.getId()){
+            case R.id.button6:
+                //lo convertimos a un entero usando parseInt
+                int n1 = Integer.parseInt(numero);
+                int n2 = Integer.parseInt(numero2);
 
-            t.setText("Resultado = "+(n1 + n2));
+                t.setText("Resultado = "+(n1 + n2));
+                break;
+
+            case R.id.button7:
+                //lo convertimos a un entero usando parseInt
+                int n1 = Integer.parseInt(numero);
+                int n2 = Integer.parseInt(numero2);
+
+                t.setText("Resultado = "+(n1 + n2));
+                break;
+            case R.id.button8:
+                //lo convertimos a un entero usando parseInt
+                int n1 = Integer.parseInt(numero);
+                int n2 = Integer.parseInt(numero2);
+
+                t.setText("Resultado = "+(n1 + n2));
+                break;
+            case R.id.button9:
+                //lo convertimos a un entero usando parseInt
+                int n1 = Integer.parseInt(numero);
+                int n2 = Integer.parseInt(numero2);
+
+                t.setText("Resultado = "+(n1 + n2));
+                break;
+
         }
-        //Modificar else if por un switch para que funcionen todos los botones
-        //Y no dividir entre 0
-        //Y en la division parse float
-        else if(view.getId() == R.id.button7){
-            String numero = e.getText().toString();
-            String numero2 = e2.getText().toString();
 
-            //lo convertimos a un entero usando parseInt
-            int n1 = Integer.parseInt(numero);
-            float n2 = Float.parseFloat(numero2);
-
-            t.setText("Resultado = "+(n1 - n2));
         }
+
 
     }
 
