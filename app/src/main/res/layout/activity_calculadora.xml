@@ -13,11 +13,11 @@
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_marginTop="90dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
             android:gravity="center"
-            android:text="Primer Numero"
+            android:text="Calculadora"
             android:textSize="25dp" />
 
         <EditText
@@ -26,16 +26,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
-            android:inputType="text"
-            android:text="Numero 1" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="TextView"
-            android:textSize="25dp" />
+            android:hint="Número 1"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/editTextText6"
@@ -43,8 +35,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
-            android:inputType="text"
-            android:text="Numero 2" />
+            android:hint="Número 2"
+            android:inputType="text" />
 
         <Button
             android:id="@+id/button6"
@@ -53,28 +45,32 @@
             android:text="Sumar"
             android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="25dp" />
-
         <Button
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resta" />
+            android:text="Resta"
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Multipliacacion" />
+            android:text="Multipliacacion"
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Division" />
+            android:text="Division"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
