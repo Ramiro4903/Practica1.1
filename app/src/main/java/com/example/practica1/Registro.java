@@ -42,7 +42,7 @@ public class Registro  extends AppCompatActivity implements View.OnClickListener
         if("admin".equals(user) && "admin".equals(pass)){
             t2.setText("Hola "+user);
         }else {
-            t2.setText("Esta mal");
+            t2.setText("Datos incorrectos");
         }
         }
 
