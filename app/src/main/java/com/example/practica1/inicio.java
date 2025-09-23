@@ -51,7 +51,7 @@ public class inicio extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(inicio.this, calculadora.class);
+                Intent intent = new Intent(inicio.this, Video.class);
                 startActivity(intent);
             }
         });
