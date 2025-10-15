@@ -68,7 +68,7 @@ public class calculadora  extends AppCompatActivity implements View.OnClickListe
             }
 
 
-            //Division
+            //División
             else if(view.getId() == R.id.button9){
                 if (n2 == 0){
                     t.setText("No se puede dividir entre 0");
