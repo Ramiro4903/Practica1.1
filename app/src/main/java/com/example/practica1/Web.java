@@ -1,16 +1,19 @@
+package com.example.practica1;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.practica1.R;
+
+public class Web extends AppCompatActivity {
     private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_web);
 
         webView = findViewById(R.id.webView);
 
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
 
         // Cargar una página web
-        webView.loadUrl("https://www.google.com&quot;);
+        webView.loadUrl("https://www.google.com");
     }
 
     // Manejo del botón "Atrás" para volver en la navegación del WebView

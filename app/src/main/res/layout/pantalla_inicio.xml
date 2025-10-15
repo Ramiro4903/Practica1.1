@@ -80,7 +80,7 @@
             android:layout_height="51dp"
             android:layout_marginStart="130dp"
             android:layout_marginTop="20dp"
-            android:text="Video"
+            android:text="Web"
             android:textSize="20dp" />
 
     </LinearLayout>
